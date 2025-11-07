@@ -2,10 +2,15 @@
 
 ## Keyboard Controls:
 
-· W - Shoulder joint UP
-· S - Shoulder joint DOWN
-· A - Elbow joint UP
-· D - Elbow joint DOWN
+· W - Shoulder joint Up
+
+· S - Shoulder joint Down
+
+· A - Elbow joint Up
+
+· D - Elbow joint Down
+
 · O - Open claw
-· C - Close claw (hold object)
+
+· C - Close claw
 
