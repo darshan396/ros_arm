@@ -1,6 +1,6 @@
 # ros_arm
 
-##Keyboard Controls:
+## Keyboard Controls:
 
 · W - Shoulder joint UP
 · S - Shoulder joint DOWN
