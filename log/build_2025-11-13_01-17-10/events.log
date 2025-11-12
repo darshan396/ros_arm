@@ -1,0 +1,55 @@
+[0.000000] (-) TimerEvent: {}
+[0.000845] (arm_teleop) JobQueued: {'identifier': 'arm_teleop', 'dependencies': OrderedDict()}
+[0.000918] (arm_teleop) JobStarted: {'identifier': 'arm_teleop'}
+[0.099378] (-) TimerEvent: {}
+[0.199910] (-) TimerEvent: {}
+[0.300376] (-) TimerEvent: {}
+[0.400957] (-) TimerEvent: {}
+[0.501493] (-) TimerEvent: {}
+[0.601981] (-) TimerEvent: {}
+[0.702541] (-) TimerEvent: {}
+[0.803050] (-) TimerEvent: {}
+[0.903525] (-) TimerEvent: {}
+[1.004051] (-) TimerEvent: {}
+[1.080242] (arm_teleop) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/build', '--no-deps', 'symlink_data'], 'cwd': '/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'dhruv-bansal', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/dhruv-bansal', 'OLDPWD': '/home/dhruv-bansal/Documents/ros_arm', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '2490', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/dhruv-bansal/Documents/ros_arm/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'dhruv-bansal', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'dhruv-bansal', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/dhruv-bansal-HP-Pavilion-Plus-Laptop-14-ew0xxx:@/tmp/.ICE-unix/2265,unix/dhruv-bansal-HP-Pavilion-Plus-Laptop-14-ew0xxx:/tmp/.ICE-unix/2265', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/22d27bf7_6900_4380_9c70_0d94fb944d56', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.71N3F3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.117', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '23', 'AMENT_PREFIX_PATH': '/home/dhruv-bansal/Documents/ros_arm/install/arm_teleop:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/python3.12/site-packages:/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop:/home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[1.104223] (-) TimerEvent: {}
+[1.204656] (-) TimerEvent: {}
+[1.305122] (-) TimerEvent: {}
+[1.405524] (-) TimerEvent: {}
+[1.486479] (arm_teleop) StdoutLine: {'line': b'running develop\n'}
+[1.505723] (-) TimerEvent: {}
+[1.606210] (-) TimerEvent: {}
+[1.706651] (-) TimerEvent: {}
+[1.807163] (-) TimerEvent: {}
+[1.907839] (-) TimerEvent: {}
+[1.999868] (arm_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[2.000308] (arm_teleop) StdoutLine: {'line': b'creating arm_teleop.egg-info\n'}
+[2.007974] (-) TimerEvent: {}
+[2.023991] (arm_teleop) StdoutLine: {'line': b'writing arm_teleop.egg-info/PKG-INFO\n'}
+[2.024412] (arm_teleop) StdoutLine: {'line': b'writing dependency_links to arm_teleop.egg-info/dependency_links.txt\n'}
+[2.024750] (arm_teleop) StdoutLine: {'line': b'writing entry points to arm_teleop.egg-info/entry_points.txt\n'}
+[2.024996] (arm_teleop) StdoutLine: {'line': b'writing requirements to arm_teleop.egg-info/requires.txt\n'}
+[2.025208] (arm_teleop) StdoutLine: {'line': b'writing top-level names to arm_teleop.egg-info/top_level.txt\n'}
+[2.025390] (arm_teleop) StdoutLine: {'line': b"writing manifest file 'arm_teleop.egg-info/SOURCES.txt'\n"}
+[2.069795] (arm_teleop) StdoutLine: {'line': b"reading manifest file 'arm_teleop.egg-info/SOURCES.txt'\n"}
+[2.070638] (arm_teleop) StdoutLine: {'line': b"writing manifest file 'arm_teleop.egg-info/SOURCES.txt'\n"}
+[2.094014] (arm_teleop) StdoutLine: {'line': b'running build_ext\n'}
+[2.094447] (arm_teleop) StdoutLine: {'line': b'Creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/python3.12/site-packages/arm-teleop.egg-link (link to .)\n'}
+[2.095444] (arm_teleop) StdoutLine: {'line': b'Installing arm_teleop_keyboard script to /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/arm_teleop\n'}
+[2.095698] (arm_teleop) StdoutLine: {'line': b'\n'}
+[2.096121] (arm_teleop) StdoutLine: {'line': b'Installed /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop\n'}
+[2.096327] (arm_teleop) StdoutLine: {'line': b'running symlink_data\n'}
+[2.096543] (arm_teleop) StdoutLine: {'line': b'creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/ament_index\n'}
+[2.096737] (arm_teleop) StdoutLine: {'line': b'creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/ament_index/resource_index\n'}
+[2.096921] (arm_teleop) StdoutLine: {'line': b'creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/ament_index/resource_index/packages\n'}
+[2.097129] (arm_teleop) StdoutLine: {'line': b'symbolically linking /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/resource/arm_teleop -> /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/ament_index/resource_index/packages\n'}
+[2.097339] (arm_teleop) StdoutLine: {'line': b'symbolically linking /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/package.xml -> /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop\n'}
+[2.097615] (arm_teleop) StdoutLine: {'line': b'creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop/launch\n'}
+[2.097807] (arm_teleop) StdoutLine: {'line': b'symbolically linking /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/launch/arm_launch.py -> /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop/launch\n'}
+[2.098003] (arm_teleop) StdoutLine: {'line': b'symbolically linking /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/launch/display.launch.py -> /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop/launch\n'}
+[2.098234] (arm_teleop) StdoutLine: {'line': b'creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop/urdf\n'}
+[2.098451] (arm_teleop) StdoutLine: {'line': b'symbolically linking /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/urdf/simple_arm.urdf -> /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop/urdf\n'}
+[2.108221] (-) TimerEvent: {}
+[2.180155] (arm_teleop) CommandEnded: {'returncode': 0}
+[2.198072] (arm_teleop) JobEnded: {'identifier': 'arm_teleop', 'rc': 0}
+[2.199677] (-) EventReactorShutdown: {}

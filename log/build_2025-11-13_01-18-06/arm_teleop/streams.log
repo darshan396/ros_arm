@@ -1,0 +1,17 @@
+[0.984s] Invoking command in '/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/build --no-deps symlink_data
+[1.415s] running develop
+[1.632s] running egg_info
+[1.653s] writing arm_teleop.egg-info/PKG-INFO
+[1.653s] writing dependency_links to arm_teleop.egg-info/dependency_links.txt
+[1.653s] writing entry points to arm_teleop.egg-info/entry_points.txt
+[1.653s] writing requirements to arm_teleop.egg-info/requires.txt
+[1.654s] writing top-level names to arm_teleop.egg-info/top_level.txt
+[1.695s] reading manifest file 'arm_teleop.egg-info/SOURCES.txt'
+[1.696s] writing manifest file 'arm_teleop.egg-info/SOURCES.txt'
+[1.719s] running build_ext
+[1.719s] Creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/python3.12/site-packages/arm-teleop.egg-link (link to .)
+[1.720s] Installing arm_teleop_keyboard script to /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/arm_teleop
+[1.720s] 
+[1.720s] Installed /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop
+[1.720s] running symlink_data
+[1.770s] Invoked command in '/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/build --no-deps symlink_data
