@@ -1,0 +1,26 @@
+running develop
+running egg_info
+creating arm_teleop.egg-info
+writing arm_teleop.egg-info/PKG-INFO
+writing dependency_links to arm_teleop.egg-info/dependency_links.txt
+writing entry points to arm_teleop.egg-info/entry_points.txt
+writing requirements to arm_teleop.egg-info/requires.txt
+writing top-level names to arm_teleop.egg-info/top_level.txt
+writing manifest file 'arm_teleop.egg-info/SOURCES.txt'
+reading manifest file 'arm_teleop.egg-info/SOURCES.txt'
+writing manifest file 'arm_teleop.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/python3.12/site-packages/arm-teleop.egg-link (link to .)
+Installing arm_teleop_keyboard script to /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/arm_teleop
+
+Installed /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop
+running symlink_data
+creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/ament_index
+creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/ament_index/resource_index
+creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/ament_index/resource_index/packages
+symbolically linking /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/resource/arm_teleop -> /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/ament_index/resource_index/packages
+symbolically linking /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/package.xml -> /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop
+creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop/launch
+symbolically linking /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/launch/arm_launch.py -> /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop/launch
+creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop/urdf
+symbolically linking /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/urdf/simple_arm.urdf -> /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop/urdf

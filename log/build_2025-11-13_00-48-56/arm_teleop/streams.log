@@ -1,0 +1,18 @@
+[0.907s] Invoking command in '/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/build --no-deps symlink_data
+[1.278s] running develop
+[1.493s] running egg_info
+[1.514s] writing arm_teleop.egg-info/PKG-INFO
+[1.514s] writing dependency_links to arm_teleop.egg-info/dependency_links.txt
+[1.515s] writing entry points to arm_teleop.egg-info/entry_points.txt
+[1.515s] writing requirements to arm_teleop.egg-info/requires.txt
+[1.515s] writing top-level names to arm_teleop.egg-info/top_level.txt
+[1.558s] reading manifest file 'arm_teleop.egg-info/SOURCES.txt'
+[1.558s] writing manifest file 'arm_teleop.egg-info/SOURCES.txt'
+[1.581s] running build_ext
+[1.582s] Creating /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/python3.12/site-packages/arm-teleop.egg-link (link to .)
+[1.582s] Installing arm_teleop_keyboard script to /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/arm_teleop
+[1.583s] 
+[1.583s] Installed /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop
+[1.583s] running symlink_data
+[1.583s] symbolically linking /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/launch/display.launch.py -> /home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/share/arm_teleop/launch
+[1.649s] Invoked command in '/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dhruv-bansal/Documents/ros_arm/install/arm_teleop/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dhruv-bansal/Documents/ros_arm/build/arm_teleop/build --no-deps symlink_data
