@@ -1,34 +1,27 @@
 <?xml version="1.0"?>
 <robot name="simple_arm">
 
-  <material name="blue">
-    <color rgba="0 0.4 0.8 1"/>
-  </material>
-  <material name="red">
-    <color rgba="0.8 0.1 0.1 1"/>
-  </material>
-  <material name="green">
-    <color rgba="0.1 0.8 0.1 1"/>
-  </material>
-  <material name="gray">
-    <color rgba="0.5 0.5 0.5 1"/>
-  </material>
+  <!-- ========== COLORS ========== -->
+  <material name="blue"><color rgba="0 0.4 0.8 1"/></material>
+  <material name="red"><color rgba="0.8 0.1 0.1 1"/></material>
+  <material name="green"><color rgba="0.1 0.8 0.1 1"/></material>
+  <material name="gray"><color rgba="0.5 0.5 0.5 1"/></material>
 
-  <!-- Base Link -->
+  <!-- ========== BASE ========== -->
   <link name="base_link">
     <visual>
       <geometry>
-        <cylinder length="0.1" radius="0.1"/>
+        <cylinder length="0.05" radius="0.08"/>
       </geometry>
       <material name="blue"/>
     </visual>
   </link>
 
-  <!-- Shoulder Servo Motor -->
+  <!-- ========== SHOULDER SERVO (rotation joint) ========== -->
   <link name="shoulder_servo">
     <visual>
       <geometry>
-        <cylinder length="0.05" radius="0.04"/>
+        <cylinder length="0.06" radius="0.04"/>
       </geometry>
       <material name="gray"/>
     </visual>
@@ -40,27 +33,25 @@
     <origin xyz="0 0 0.05" rpy="0 0 0"/>
   </joint>
 
-  <!-- Shoulder Joint (now controlled by servo) -->
-  <joint name="shoulder_joint" type="revolute">
-    <parent link="shoulder_servo"/>
-    <child link="upper_arm"/>
-    <origin xyz="0 0 0.025" rpy="0 0 0"/>
-    <axis xyz="0 1 0"/>
-    <limit lower="-3.14" upper="3.14" effort="10" velocity="1.0"/>
-    <dynamics damping="0.1" friction="0.01"/>
-  </joint>
-
-  <!-- Upper Arm Link -->
   <link name="upper_arm">
     <visual>
       <geometry>
-        <box size="0.05 0.05 0.3"/>
+        <box size="0.05 0.05 0.25"/>
       </geometry>
+      <origin xyz="0 0 0.125" rpy="0 0 0"/>
       <material name="red"/>
     </visual>
   </link>
 
-  <!-- Elbow Servo Motor -->
+  <joint name="shoulder_joint" type="revolute">
+    <parent link="shoulder_servo"/>
+    <child link="upper_arm"/>
+    <origin xyz="0 0 0.03" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-1.57" upper="1.57" effort="10" velocity="1.0"/>
+  </joint>
+
+  <!-- ========== ELBOW SERVO (rotation joint) ========== -->
   <link name="elbow_servo">
     <visual>
       <geometry>
@@ -73,30 +64,28 @@
   <joint name="upper_arm_to_elbow_servo" type="fixed">
     <parent link="upper_arm"/>
     <child link="elbow_servo"/>
-    <origin xyz="0 0 0.15" rpy="0 0 0"/>
+    <origin xyz="0 0 0.25" rpy="0 0 0"/>
   </joint>
 
-  <!-- Elbow Joint (now controlled by servo) -->
+  <link name="forearm">
+    <visual>
+      <geometry>
+        <box size="0.045 0.045 0.22"/>
+      </geometry>
+      <origin xyz="0 0 0.11" rpy="0 0 0"/>
+      <material name="green"/>
+    </visual>
+  </link>
+
   <joint name="elbow_joint" type="revolute">
     <parent link="elbow_servo"/>
     <child link="forearm"/>
     <origin xyz="0 0 0.025" rpy="0 0 0"/>
     <axis xyz="0 1 0"/>
-    <limit lower="0.0" upper="2.62" effort="10" velocity="1.0"/>
-    <dynamics damping="0.1" friction="0.01"/>
+    <limit lower="0.0" upper="2.0" effort="10" velocity="1.0"/>
   </joint>
 
-  <!-- Forearm Link -->
-  <link name="forearm">
-    <visual>
-      <geometry>
-        <box size="0.05 0.05 0.25"/>
-      </geometry>
-      <material name="green"/>
-    </visual>
-  </link>
-
-  <!-- Claw Servo Motor -->
+  <!-- ========== CLAW SERVO (fixed box) ========== -->
   <link name="claw_servo">
     <visual>
       <geometry>
@@ -109,27 +98,26 @@
   <joint name="forearm_to_claw_servo" type="fixed">
     <parent link="forearm"/>
     <child link="claw_servo"/>
-    <origin xyz="0 0 0.125" rpy="0 0 0"/>
+    <origin xyz="0 0 0.22" rpy="0 0 0"/>
   </joint>
 
-  <!-- Claw Joint (now controlled by servo) -->
-  <joint name="claw_joint" type="prismatic">
-    <parent link="claw_servo"/>
-    <child link="claw"/>
-    <origin xyz="0 0 0.015" rpy="0 0 0"/>
-    <axis xyz="1 0 0"/>
-    <limit lower="0.0" upper="0.1" effort="5" velocity="0.5"/>
-    <dynamics damping="0.05" friction="0.01"/>
-  </joint>
-
-  <!-- Claw Link -->
+  <!-- ========== CLAW (small movable hand) ========== -->
   <link name="claw">
     <visual>
       <geometry>
         <box size="0.15 0.02 0.02"/>
       </geometry>
       <material name="blue"/>
+      <origin xyz="0.075 0 0"/>
     </visual>
   </link>
+
+  <joint name="claw_joint" type="prismatic">
+    <parent link="claw_servo"/>
+    <child link="claw"/>
+    <origin xyz="0 0 0.02" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit lower="0.0" upper="0.05" effort="5" velocity="0.5"/>
+  </joint>
 
 </robot>
